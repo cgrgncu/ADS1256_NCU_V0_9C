@@ -16,3 +16,5 @@
 + 供電5V後模組才會啟動運行。
 + 鈕扣電池僅供維持RTC。
 + 上電後，GPS模組的USB接頭(Micro-B,Device only)可以連接電腦。是Virtual COM port，請依照ublox原廠軟體連線。
+  + https://www.u-blox.com/en/product/u-center
+  + 因為使用M8系列GPS模組，Windows下請使用「u-center」軟體而非「u-center2」軟體。
