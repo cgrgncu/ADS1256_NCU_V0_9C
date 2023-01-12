@@ -18,3 +18,4 @@
 + 上電後，GPS模組的USB接頭(Micro-B,Device only)可以連接電腦。是Virtual COM port，請依照ublox原廠軟體連線。
   + https://www.u-blox.com/en/product/u-center
   + 因為使用M8系列GPS模組，Windows下請使用「u-center」軟體而非「u-center2」軟體。
+  + 需要有ublox GPS模組使用的Virtual COM Driver，這是「u-center」軟體的預設安裝項目。
