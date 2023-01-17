@@ -28,3 +28,9 @@
 
 ### SD卡格式
 + 支援FAT32與exFAT，目前打算只使用exFAT來測試。最大容量試過256[GB]。
+
+
+# 開發紀錄
+
+### MCU開發板
+https://www.nuvoton.com/products/iot-solution/iot-platform/numaker-pfm-m487/index.html
