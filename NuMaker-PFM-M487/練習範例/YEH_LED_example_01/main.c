@@ -35,21 +35,27 @@ void SYS_Init(void)
     /* Set PCLK0/PCLK1 to HCLK/2 */
     CLK->PCLKDIV = (CLK_PCLKDIV_APB0DIV_DIV2 | CLK_PCLKDIV_APB1DIV_DIV2);
 
-    /* Enable UART clock */
-    CLK_EnableModuleClock(UART0_MODULE);
-
-    /* Select UART clock source from HXT */
-    CLK_SetModuleClock(UART0_MODULE, CLK_CLKSEL1_UART0SEL_HXT, CLK_CLKDIV0_UART0(1));
+	//-----------------------------------------------
+    // UART0的clock設定，這裡不必指定PIN腳
+	//--
+	/* Enable UART clock */
+	CLK_EnableModuleClock(UART0_MODULE);
+	/* Select UART clock source from HXT */
+	CLK_SetModuleClock(UART0_MODULE, CLK_CLKSEL1_UART0SEL_HXT, CLK_CLKDIV0_UART0(1));
+	//-----------------------------------------------
 
     /* Update System Core Clock */
     /* User can use SystemCoreClockUpdate() to calculate SystemCoreClock. */
     SystemCoreClockUpdate();
 
-
-
+	//-----------------------------------------------
+	// UART0的PIN腳GPIO設定。PB.12、PB.13連接到ICE，ICE提供UART轉USB功能
+	//--
     /* Set GPB multi-function pins for UART0 RXD and TXD */
     SYS->GPB_MFPH &= ~(SYS_GPB_MFPH_PB12MFP_Msk | SYS_GPB_MFPH_PB13MFP_Msk);
     SYS->GPB_MFPH |= (SYS_GPB_MFPH_PB12MFP_UART0_RXD | SYS_GPB_MFPH_PB13MFP_UART0_TXD);
+	//-----------------------------------------------
+
     /* Lock protected registers */
     SYS_LockReg();
 }
@@ -59,8 +65,8 @@ int main()
 {
 
     SYS_Init();
-    /* Init UART to 115200-8n1 for print message */
-    UART_Open(UART0, 115200);
+    /* Init UART to 921600-8n1 for print message */
+    UART_Open(UART0, 921600);
     
     printf("\n");//第一行常有亂碼，先使用換行字元
     printf("*************************************\n");
@@ -73,7 +79,7 @@ int main()
     // 初始化GPIO為輸出模式。找到LED_R對應的pin腳，依照其英文腳位名稱，PH.0。
     // 設定時對應輸入PH，BIT0
     GPIO_SetMode(PH, BIT0, GPIO_MODE_OUTPUT);
-    // 這個腳位的輸出就是PH0，依照線路設計，0=ON，1=OFF。
+    // 這個腳位的輸出就是PH0，依照線路設計，GPIO低電位=0=ON，GPIO高電位=1=OFF。
     PH0=1;
     
     /* Got no where to go, just loop forever */
