@@ -96,8 +96,7 @@ int main()
       getchar();    
       PH0=1;
       printf("紅色LED燈恆滅!\n");
-    }
-      ;
+    };
 
 }
 
