@@ -4,8 +4,8 @@
 //   Copyright: All rights reserved.
 //   Author: HsiupoYeh 
 //   Version: v20230122a
-//   Description: ¥Ü½d¨Ï¥Îµ{¦¡½X±±¨îLED¡A°O±o»Ý­n¤â°Ê¼W¥[stdDriverªºgpio.c¨ìLibrary¤¤
-//   REF:¡u..\M480BSP-3.05.001\SampleCode\Template¡v
+//   Description: ç¤ºç¯„ä½¿ç”¨ç¨‹å¼ç¢¼æŽ§åˆ¶LEDï¼Œè¨˜å¾—éœ€è¦æ‰‹å‹•å¢žåŠ stdDriverçš„gpio.cåˆ°Libraryä¸­
+//   REF:ã€Œ..\M480BSP-3.05.001\SampleCode\Templateã€
 //**************************************************************************
 
 #include <stdio.h>
@@ -35,26 +35,26 @@ void SYS_Init(void)
     /* Set PCLK0/PCLK1 to HCLK/2 */
     CLK->PCLKDIV = (CLK_PCLKDIV_APB0DIV_DIV2 | CLK_PCLKDIV_APB1DIV_DIV2);
 
-	//-----------------------------------------------
-    // UART0ªºclock³]©w¡A³o¸Ì¤£¥²«ü©wPIN¸}
-	//--
-	/* Enable UART clock */
-	CLK_EnableModuleClock(UART0_MODULE);
-	/* Select UART clock source from HXT */
-	CLK_SetModuleClock(UART0_MODULE, CLK_CLKSEL1_UART0SEL_HXT, CLK_CLKDIV0_UART0(1));
-	//-----------------------------------------------
+    //-----------------------------------------------
+    // UART0çš„clockè¨­å®šï¼Œé€™è£¡ä¸å¿…æŒ‡å®šPINè…³
+    //--
+    /* Enable UART clock */
+    CLK_EnableModuleClock(UART0_MODULE);
+    /* Select UART clock source from HXT */
+    CLK_SetModuleClock(UART0_MODULE, CLK_CLKSEL1_UART0SEL_HXT, CLK_CLKDIV0_UART0(1));
+    //-----------------------------------------------
 
     /* Update System Core Clock */
     /* User can use SystemCoreClockUpdate() to calculate SystemCoreClock. */
     SystemCoreClockUpdate();
 
-	//-----------------------------------------------
-	// UART0ªºPIN¸}GPIO³]©w¡CPB.12¡BPB.13³s±µ¨ìICE¡AICE´£¨ÑUARTÂàUSB¥\¯à
-	//--
+    //-----------------------------------------------
+    // UART0çš„PINè…³GPIOè¨­å®šã€‚PB.12ã€PB.13é€£æŽ¥åˆ°ICEï¼ŒICEæä¾›UARTè½‰USBåŠŸèƒ½
+    //--
     /* Set GPB multi-function pins for UART0 RXD and TXD */
     SYS->GPB_MFPH &= ~(SYS_GPB_MFPH_PB12MFP_Msk | SYS_GPB_MFPH_PB13MFP_Msk);
     SYS->GPB_MFPH |= (SYS_GPB_MFPH_PB12MFP_UART0_RXD | SYS_GPB_MFPH_PB13MFP_UART0_TXD);
-	//-----------------------------------------------
+    //-----------------------------------------------
 
     /* Lock protected registers */
     SYS_LockReg();
@@ -68,34 +68,34 @@ int main()
     /* Init UART to 921600-8n1 for print message */
     UART_Open(UART0, 921600);
     
-    printf("\n");//²Ä¤@¦æ±`¦³¶Ã½X¡A¥ý¨Ï¥Î´«¦æ¦r¤¸
+    printf("\n");//ç¬¬ä¸€è¡Œå¸¸æœ‰äº‚ç¢¼ï¼Œå…ˆä½¿ç”¨æ›è¡Œå­—å…ƒ
     printf("*************************************\n");
-    printf("* ¶´Åé¦WºÙ: YEH_LED_example_01 \n");
-    printf("* ª©¥»: v20230122a \n");
+    printf("* éŸŒé«”åç¨±: YEH_LED_example_01 \n");
+    printf("* ç‰ˆæœ¬: v20230122a \n");
     printf("*************************************\n");
     
     
     //=== GPIO pin37 (PH.0) - LED_R 
-    // ªì©l¤ÆGPIO¬°¿é¥X¼Ò¦¡¡C§ä¨ìLED_R¹ïÀ³ªºpin¸}¡A¨Ì·Ó¨ä­^¤å¸}¦ì¦WºÙ¡APH.0¡C
-    // ³]©w®É¹ïÀ³¿é¤JPH¡ABIT0
+    // åˆå§‹åŒ–GPIOç‚ºè¼¸å‡ºæ¨¡å¼ã€‚æ‰¾åˆ°LED_Rå°æ‡‰çš„pinè…³ï¼Œä¾ç…§å…¶è‹±æ–‡è…³ä½åç¨±ï¼ŒPH.0ã€‚
+    // è¨­å®šæ™‚å°æ‡‰è¼¸å…¥PHï¼ŒBIT0
     GPIO_SetMode(PH, BIT0, GPIO_MODE_OUTPUT);
-    // ³o­Ó¸}¦ìªº¿é¥X´N¬OPH0¡A¨Ì·Ó½u¸ô³]­p¡AGPIO§C¹q¦ì=0=ON¡AGPIO°ª¹q¦ì=1=OFF¡C
+    // é€™å€‹è…³ä½çš„è¼¸å‡ºå°±æ˜¯PH0ï¼Œä¾ç…§ç·šè·¯è¨­è¨ˆï¼ŒGPIOä½Žé›»ä½=0=ONï¼ŒGPIOé«˜é›»ä½=1=OFFã€‚
     PH0=1;
     
     /* Got no where to go, just loop forever */
     while(1)
     {
       printf("\n");
-      printf("½Ð«ö¤U¥ô·N¤@­Ó¦r¤¸«á¬õ¦âLED¿O±N«G°_: \n");
+      printf("è«‹æŒ‰ä¸‹ä»»æ„ä¸€å€‹å­—å…ƒå¾Œç´…è‰²LEDç‡ˆå°‡äº®èµ·: \n");
       getchar();    
       PH0=0;
-      printf("¬õ¦âLED¿O«í«G!\n");
+      printf("ç´…è‰²LEDç‡ˆæ†äº®!\n");
       
       printf("\n");
-      printf("½Ð«ö¤U¥ô·N¤@­Ó¦r¤¸«á¬õ¦âLED¿O±Nº¶·À: \n");
+      printf("è«‹æŒ‰ä¸‹ä»»æ„ä¸€å€‹å­—å…ƒå¾Œç´…è‰²LEDç‡ˆå°‡ç†„æ»…: \n");
       getchar();    
       PH0=1;
-      printf("¬õ¦âLED¿O«í·À!\n");
+      printf("ç´…è‰²LEDç‡ˆæ†æ»…!\n");
     }
       ;
 
