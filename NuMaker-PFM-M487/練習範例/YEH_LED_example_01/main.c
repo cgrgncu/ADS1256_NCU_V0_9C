@@ -65,8 +65,8 @@ int main()
 {
 
     SYS_Init();
-    /* Init UART to 921600-8n1 for print message */
-    UART_Open(UART0, 921600);
+    /* Init UART to 57600-8n1 for print message */
+    UART_Open(UART0, 57600);
     
     printf("\n");//第一行常有亂碼，先使用換行字元
     printf("*************************************\n");
