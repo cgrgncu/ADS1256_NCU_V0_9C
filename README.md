@@ -48,4 +48,5 @@ https://www.nuvoton.com/products/iot-solution/iot-platform/numaker-pfm-m487/inde
   + ublox公司的GPS採用業界常用的補償值設計，使GPS晶片延長溢位的發生時間。
   + 查閱晶片的韌體版本說明，會指出GPS week number的設定，對應可使用的年份。M8系列使用FW3.01時，約在2035年四月發生溢位。
     + REF: https://content.u-blox.com/sites/default/files/GNSS-FW3.01_ReleaseNotes_%28UBX-16000319%29_Public.pdf
-  + 如果原廠有提供韌體更新，應該還是可以延長時間壽命。
+  + 解決方案1: 如果原廠有提供韌體更新，應該還是可以延長時間壽命。
+  + 解決方案2: 更新GPS晶片。
