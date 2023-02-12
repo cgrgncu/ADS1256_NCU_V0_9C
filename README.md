@@ -37,3 +37,15 @@
 
 ### MCU開發板
 https://www.nuvoton.com/products/iot-solution/iot-platform/numaker-pfm-m487/index.html
+
+
+
+# 8U8D
+
+### 產品壽命
++ GPS為時間基準的紀錄器。然而，GPS存在一個已知問題，GPS week number rollover，約19.6年發生一次，其計算week的二進位數值會溢位而回到0，這將影響產品的壽命。
+  + GPS week number rollover第一次發生在1999年，第二次在2019年，下一次則是在2038年。
+  + ublox公司的GPS採用業界常用的補償值設計，使GPS晶片延長溢位的發生時間。
+  + 查閱晶片的韌體版本說明，會指出GPS week number的設定，對應可使用的年份。M8系列使用FW3.01時，約在2035年四月發生溢位。
+    + REF: https://content.u-blox.com/sites/default/files/GNSS-FW3.01_ReleaseNotes_%28UBX-16000319%29_Public.pdf
+  + 如果原廠有提供韌體更新，應該還是可以延長時間壽命。
