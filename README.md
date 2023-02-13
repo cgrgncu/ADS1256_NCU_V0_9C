@@ -40,7 +40,8 @@ https://www.nuvoton.com/products/iot-solution/iot-platform/numaker-pfm-m487/inde
 
 
 
-# 8U8D
+# 8U8D_100
+
 
 ### 產品壽命
 + GPS week number rollover:
@@ -86,7 +87,7 @@ https://www.nuvoton.com/products/iot-solution/iot-platform/numaker-pfm-m487/inde
        + 每日容量=1980[MB]=2[GB]。
        + 使用標示512[GB]的SD卡，建議只使用90%的可用容量避免讀寫效率下降，約可使用(512*0.9)/2=230天(半年多)。
        + 使用標示1[TB]=931[GB]的SD卡，建議只使用90%的可用容量避免讀寫效率下降，約可使用(931*0.9)/2=418天(1年多)。
-     + 8[ch]100[Hz]24[bit]:
+     + :heavy_check_mark: 8[ch]100[Hz]24[bit]:
        + 每分鐘容量=(8*100*3*60)+1024=145024[Bytes]=142[KB]=0.14[MB]。
        + 每日容量=202[MB]。
        + 使用標示512[GB]的SD卡，建議只使用90%的可用容量避免讀寫效率下降，約可使用(512*0.9)/0.202=2281天(6年多)。
@@ -100,13 +101,16 @@ https://www.nuvoton.com/products/iot-solution/iot-platform/numaker-pfm-m487/inde
 ### 工作流程
 + 初始化:
   1. 上電。SD卡槽旁邊的LED燈(SD_POWER1)會亮。這是硬體過電就亮，非韌體控制。
-  2. 初始化:啟用Debug。
-  3. 初始化:測試LED燈(紅黃綠)。只能從外部觀看閃爍情況來驗證是否正常，軟體無法驗證。
-  4. 初始化:啟用SD卡功能。包含寫運行紀錄、讀取參數檔案。後續有需要可再寫入新參數檔案。
-  5. 初始化:啟用網路功能。包含設定MAC、IP、PORT等等。後續部分資訊同步從網路丟出。
-  6. 初始化:啟用ADS1256。包含硬體RESET、SPI溝通等等。
-  7. 初始化:啟用GPS模組。包含UART、TP1、TP2。注意，GPS參數已由u-center預先設定好並儲存在GPS模組內部。
+  2. 初始化: 啟用Debug。
+  3. 初始化: 測試LED燈(紅黃綠)。只能從外部觀看閃爍情況來驗證是否正常，軟體無法驗證。
+  4. 初始化: 啟用SD卡功能。包含寫運行紀錄、讀取參數檔案。後續有需要可再寫入新參數檔案。
+  5. 初始化: 啟用網路功能。包含設定MAC、IP、PORT等等。後續部分資訊同步從網路丟出。
+  6. 初始化: 啟用ADS1256。包含硬體RESET、SPI溝通等等。
+  7. 初始化: 啟用GPS模組。包含UART、TP1、TP2。注意，GPS參數已由u-center預先設定好並儲存在GPS模組內部。
 + 主迴圈:
   1. 定義GPS時間索引。
-    + 例如:TP1=1[]
+    + 已規劃:TP1=1[Hz]，length=3000[us]；TP2=100[Hz]，length=5000[us]。
+    + 準備好TP1與TP2的中斷。
+    + 開啟GPS電源。
+    + 
   +
