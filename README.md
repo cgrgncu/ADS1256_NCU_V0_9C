@@ -51,6 +51,7 @@ https://www.nuvoton.com/products/iot-solution/iot-platform/numaker-pfm-m487/inde
   + 查閱晶片的韌體版本說明，會指出GPS week number的設定，對應可使用的年份。M8系列使用FW3.01時，約在2035年四月發生溢位。
     + REF: https://content.u-blox.com/sites/default/files/GNSS-FW3.01_ReleaseNotes_%28UBX-16000319%29_Public.pdf
     + REF: https://content.u-blox.com/sites/default/files/u-blox-GPS-WeekNumberRolloverWorkaround_IN_%28UBX-19039990%29.pdf
+    + 依照ublox的說明，這僅影響年月日的顯示，並不影響時分秒的顯示，也不影響其他導航與時間脈衝功能。建議使用者針對此特色做相應準備。
   + 解決方案1: 如果原廠有提供韌體更新，應該還是可以延長時間壽命。
   + 解決方案2: 更新GPS晶片。
 + 2038年問題:
