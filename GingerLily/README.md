@@ -1,7 +1,7 @@
 # 野薑花 - 地球物理專用紀錄器 (Ginger Lily - Geophysical Recorder)
 + 野薑花象徵著信賴，這個紀錄器最大的理念就是要值得信賴。
 
-### 支援型號
+### 型號(Model Name)
 + GLGR-8U8D-100
   + GLGR = Ginger Lily - Geophysical Recorder = 野薑花-地球物理專用紀錄器
   + 8U = 8 Units = 8個獨立ADC晶片
