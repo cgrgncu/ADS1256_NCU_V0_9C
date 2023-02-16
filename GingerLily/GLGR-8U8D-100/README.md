@@ -1,4 +1,4 @@
-#GLGR-8U8D-100
+# GLGR-8U8D-100
 + GLGR = Ginger Lily - Geophysical Recorder = 野薑花-地球物理專用紀錄器
 + 8U = 8 Units = 8個獨立ADC晶片
 + 8D = 8 Differential Inputs = 共有8個差動輸入
