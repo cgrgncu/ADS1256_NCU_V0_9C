@@ -79,7 +79,7 @@ https://www.nuvoton.com/products/iot-solution/iot-platform/numaker-pfm-m487/inde
   + 選用SD卡(Secure Digital Memory Card)，尺寸為microSD。目前市面上主流規範為SD3.0(SDXC)，最大容量可達2[TB]。讀寫速度遠大於我的資料量。
   + 檔案系統採用FAT32或exFAT:
     + FAT32，最大單一檔案容量=4[GB]，Windows下建議SD卡容量小於等於32[GB]的情況下使用此格式。讀寫速度較慢。
-    + exFAT，最大單一檔案容量=64[ZB]。讀寫速度較快。
+    + :heavy_check_mark:exFAT，最大單一檔案容量=64[ZB]。讀寫速度較快。
     + FAT32與exFAT使用相同的日期範圍，為1980年1月1日至2107年12月31日。
   + 容量需求:
     + 每分鐘儲存在一個檔案中:
