@@ -130,7 +130,9 @@ Record資料夾
 0000000001.bin
 </td>
 <td colspan="6" width="92">
-資料檔案
+<p>資料檔案</p>
+<p>*範圍: 0~4294967295</p>  
+<p>*8U8D-100恰好一分鐘一個檔案，故使用範圍遠小於4294967295</p>
 </td>
 </tr>
 <tr>
@@ -206,6 +208,133 @@ Record資料夾
 </td>
 <td colspan="13" width="297">
 0000001440.bin
+</td>
+<td colspan="6" width="92">
+資料檔案
+</td>
+</tr>
+<tr>
+<td width="22">
+<p>&nbsp;</p>
+</td>
+<td width="22">
+<p>&nbsp;</p>
+</td>
+<td width="22">
+<p>&nbsp;</p>
+</td>
+<td width="22">
+<p>&nbsp;</p>
+</td>
+<td width="22">
+<p>&nbsp;</p>
+</td>
+<td colspan="14" width="319">
+0002\
+</td>
+<td colspan="6" width="114">
+分頁資料夾
+</td>
+</tr>
+<tr>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>  
+<td width="22">
+&nbsp;
+</td>
+<td colspan="13" width="297">
+0000001401.bin
+</td>
+<td colspan="6" width="92">
+資料檔案
+</td>
+</tr>
+<tr>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>  
+<td width="22">
+&nbsp;
+</td>
+<td colspan="13" width="297">
+0000001402.bin
+</td>
+<td colspan="6" width="92">
+資料檔案
+</td>
+</tr>
+<tr>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>  
+<td width="22">
+&nbsp;
+</td>
+<td colspan="13" width="297">
+...
+</td>
+<td colspan="6" width="92">
+資料檔案
+</td>
+</tr>
+<tr>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>  
+<td width="22">
+&nbsp;
+</td>
+<td colspan="13" width="297">
+0000002880.bin
 </td>
 <td colspan="6" width="92">
 資料檔案
