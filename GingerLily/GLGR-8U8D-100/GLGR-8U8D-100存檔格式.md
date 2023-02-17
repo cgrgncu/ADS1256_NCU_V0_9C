@@ -78,10 +78,11 @@ Data資料夾
 &nbsp;
 </td>
 <td colspan="15" width="341">
-A00120230216143500\
+A00120230214131530\
 </td>
 <td colspan="6" width="136">
-Record資料夾
+<p>Record資料夾</p>
+<p>*包含儀器四碼序號與起始時間</p>
 </td>
 </tr>
 <tr>
@@ -104,7 +105,9 @@ Record資料夾
 0001\
 </td>
 <td colspan="6" width="114">
-分頁資料夾
+<p>分頁資料夾</p>
+<p>*範圍: 0~9999或0x0000~0xFFFF</p>  
+<p>*8U8D-100恰好一天一個分頁資料夾，使用0~9999</p>
 </td>
 </tr>
 <tr>
@@ -184,7 +187,7 @@ Record資料夾
 ...
 </td>
 <td colspan="6" width="92">
-資料檔案
+更多資料檔案
 </td>
 </tr>
 <tr>
@@ -215,19 +218,19 @@ Record資料夾
 </tr>
 <tr>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td colspan="14" width="319">
 0002\
@@ -311,7 +314,7 @@ Record資料夾
 ...
 </td>
 <td colspan="6" width="92">
-資料檔案
+更多資料檔案
 </td>
 </tr>
 <tr>
@@ -342,96 +345,404 @@ Record資料夾
 </tr>
 <tr>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
-<td colspan="15" width="341">
-<p>*.CLC</p>
+<td width="22">
+&nbsp;
 </td>
-<td colspan="6" width="136">
-<p>&nbsp;</p>
+<td colspan="14" width="319">
+...
+</td>
+<td colspan="6" width="114">
+更多分頁資料夾
 </td>
 </tr>
 <tr>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td colspan="14" width="319">
+Config.json
+</td>
+<td colspan="6" width="114">
+Record設定檔
+</td>
+</tr>  
+<tr>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
 </td>
 <td colspan="15" width="341">
-<p>*.CLB</p>
+A00120230216143500\
 </td>
 <td colspan="6" width="136">
-<p>&nbsp;</p>
+Record資料夾
 </td>
 </tr>
 <tr>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td colspan="14" width="319">
+0001\
+</td>
+<td colspan="6" width="114">
+分頁資料夾
+</td>
+</tr>
+<tr>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>  
+<td width="22">
+&nbsp;
+</td>
+<td colspan="13" width="297">
+0000000001.bin
+</td>
+<td colspan="6" width="92">
+資料檔案
+</td>
+</tr>
+<tr>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>  
+<td width="22">
+&nbsp;
+</td>
+<td colspan="13" width="297">
+0000000002.bin
+</td>
+<td colspan="6" width="92">
+資料檔案
+</td>
+</tr>
+<tr>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>  
+<td width="22">
+&nbsp;
+</td>
+<td colspan="13" width="297">
+...
+</td>
+<td colspan="6" width="92">
+更多資料檔案
+</td>
+</tr>
+<tr>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>  
+<td width="22">
+&nbsp;
+</td>
+<td colspan="13" width="297">
+0000001440.bin
+</td>
+<td colspan="6" width="92">
+資料檔案
+</td>
+</tr>
+<tr>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td colspan="14" width="319">
+0002\
+</td>
+<td colspan="6" width="114">
+分頁資料夾
+</td>
+</tr>
+<tr>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>  
+<td width="22">
+&nbsp;
+</td>
+<td colspan="13" width="297">
+0000001401.bin
+</td>
+<td colspan="6" width="92">
+資料檔案
+</td>
+</tr>
+<tr>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>  
+<td width="22">
+&nbsp;
+</td>
+<td colspan="13" width="297">
+0000001402.bin
+</td>
+<td colspan="6" width="92">
+資料檔案
+</td>
+</tr>
+<tr>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>  
+<td width="22">
+&nbsp;
+</td>
+<td colspan="13" width="297">
+...
+</td>
+<td colspan="6" width="92">
+更多資料檔案
+</td>
+</tr>
+<tr>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>  
+<td width="22">
+&nbsp;
+</td>
+<td colspan="13" width="297">
+0000002880.bin
+</td>
+<td colspan="6" width="92">
+資料檔案
+</td>
+</tr>
+<tr>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td colspan="14" width="319">
+...
+</td>
+<td colspan="6" width="114">
+更多分頁資料夾
+</td>
+</tr>
+<tr>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td colspan="14" width="319">
+Config.json
+</td>
+<td colspan="6" width="114">
+Record設定檔
+</td>
+</tr> 
+<tr>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
 </td>
 <td colspan="16" width="363">
-<p>Doc\</p>
+202302\
 </td>
 <td colspan="6" width="136">
-<p>&nbsp;</p>
+年月資料夾
 </td>
-</tr>
 <tr>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td colspan="15" width="341">
-<p>LOG_NCU20220401A(W01A).pdf</p>
+A00120230214131530\
 </td>
 <td colspan="6" width="136">
-<p>野外工作紀錄表</p>
-</td>
-</tr>
-<tr>
-<td width="22">
-<p>&nbsp;</p>
-</td>
-<td width="22">
-<p>&nbsp;</p>
-</td>
-<td width="22">
-<p>&nbsp;</p>
-</td>
-<td colspan="16" width="363">
-<p>Pic\</p>
-</td>
-<td colspan="6" width="136">
-<p>&nbsp;</p>
+Record資料夾
 </td>
 </tr>
 <tr>
@@ -447,331 +758,293 @@ Record資料夾
 <td width="22">
 <p>&nbsp;</p>
 </td>
-<td colspan="15" width="341">
-<p>IMG_NCU20220401A(W01A)_01.jpg</p>
-<p>IMG_NCU20220401A(W01A)_02.jpg</p>
-<p>IMG_NCU20220401A(W01A)_03.jpg</p>
-<p>IMG_NCU20220401A(W01A)_04.jpg</p>
-<p>IMG_NCU20220401A(W01A)_05.jpg</p>
-<p>IMG_NCU20220401A(W01A)_06.jpg</p>
-<p>IMG_NCU20220401A(W01A)_07.jpg</p>
-<p>IMG_NCU20220401A(W01A)_08.jpg</p>
-<p>IMG_NCU20220401A(W01A)_09.jpg</p>
+<td width="22">
+<p>&nbsp;</p>
 </td>
-<td colspan="6" width="136">
-<p>野外工作照片</p>
+<td colspan="14" width="319">
+0001\
+</td>
+<td colspan="6" width="114">
+分頁資料夾
 </td>
 </tr>
 <tr>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
-<td colspan="16" width="363">
-<p>EDI\</p>
+<td width="22">
+&nbsp;
 </td>
-<td colspan="6" width="136">
-<p>&nbsp;</p>
+<td width="22">
+&nbsp;
+</td>  
+<td width="22">
+&nbsp;
+</td>
+<td colspan="13" width="297">
+0000000001.bin
+</td>
+<td colspan="6" width="92">
+資料檔案
 </td>
 </tr>
 <tr>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
-<td colspan="15" width="341">
-<p>NCU20220401A(W01A)_SS.edi</p>
-<p>NCU20220401A(W01A)_RR.edi</p>
+<td width="22">
+&nbsp;
+</td>  
+<td width="22">
+&nbsp;
 </td>
-<td colspan="6" width="136">
-<p>單站估算與遠端參考法估算資料</p>
+<td colspan="13" width="297">
+0000000002.bin
+</td>
+<td colspan="6" width="92">
+資料檔案
 </td>
 </tr>
 <tr>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
-<td colspan="17" width="386">
-<p>NCU20220401A(W02A)\</p>
+<td width="22">
+&nbsp;
 </td>
-<td colspan="6" width="136">
-<p>測站名稱</p>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>  
+<td width="22">
+&nbsp;
+</td>
+<td colspan="13" width="297">
+...
+</td>
+<td colspan="6" width="92">
+更多資料檔案
 </td>
 </tr>
 <tr>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
-<td colspan="17" width="386">
-<p>...</p>
+<td width="22">
+&nbsp;
 </td>
-<td colspan="6" width="136">
-<p>&nbsp;</p>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>  
+<td width="22">
+&nbsp;
+</td>
+<td colspan="13" width="297">
+0000001440.bin
+</td>
+<td colspan="6" width="92">
+資料檔案
 </td>
 </tr>
 <tr>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
 </td>
 <td width="22">
 <p>&nbsp;</p>
 </td>
-<td colspan="17" width="386">
-<p>NCU20220401A(W16)\</p>
+<td width="22">
+&nbsp;
 </td>
-<td colspan="6" width="136">
-<p>測站名稱</p>
+<td width="22">
+&nbsp;
+</td>
+<td colspan="14" width="319">
+0002\
+</td>
+<td colspan="6" width="114">
+分頁資料夾
 </td>
 </tr>
 <tr>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
-<td colspan="17" width="386">
-<p>NCU20220401A(WR1)\</p>
+<td width="22">
+&nbsp;
 </td>
-<td colspan="6" width="136">
-<p>測站名稱</p>
+<td width="22">
+&nbsp;
+</td>
+<td width="22">
+&nbsp;
+</td>  
+<td width="22">
+&nbsp;
+</td>
+<td colspan="13" width="297">
+0000001401.bin
+</td>
+<td colspan="6" width="92">
+資料檔案
 </td>
 </tr>
 <tr>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
-<td colspan="16" width="363">
-<p>RawData\</p>
+<td width="22">
+&nbsp;
 </td>
-<td colspan="6" width="136">
-<p>&nbsp;</p>
+<td width="22">
+&nbsp;
+</td>  
+<td width="22">
+&nbsp;
+</td>
+<td colspan="13" width="297">
+0000001402.bin
+</td>
+<td colspan="6" width="92">
+資料檔案
 </td>
 </tr>
 <tr>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
-<td colspan="15" width="341">
-<p>*.TBL</p>
+<td width="22">
+&nbsp;
+</td>  
+<td width="22">
+&nbsp;
 </td>
-<td colspan="6" width="136">
-<p>&nbsp;</p>
+<td colspan="13" width="297">
+...
+</td>
+<td colspan="6" width="92">
+更多資料檔案
 </td>
 </tr>
 <tr>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
-<td colspan="15" width="341">
-<p>*.TSn</p>
+<td width="22">
+&nbsp;
+</td>  
+<td width="22">
+&nbsp;
 </td>
-<td colspan="6" width="136">
-<p>&nbsp;</p>
+<td colspan="13" width="297">
+0000002880.bin
+</td>
+<td colspan="6" width="92">
+資料檔案
 </td>
 </tr>
 <tr>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
-<td colspan="15" width="341">
-<p>*.CLC</p>
+<td width="22">
+&nbsp;
 </td>
-<td colspan="6" width="136">
-<p>&nbsp;</p>
+<td colspan="14" width="319">
+...
+</td>
+<td colspan="6" width="114">
+更多分頁資料夾
 </td>
 </tr>
 <tr>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
-</td>
-<td colspan="15" width="341">
-<p>*.CLB</p>
-</td>
-<td colspan="6" width="136">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
 <td width="22">
-<p>&nbsp;</p>
+&nbsp;
 </td>
-<td width="22">
-<p>&nbsp;</p>
+<td colspan="14" width="319">
+Config.json
 </td>
-<td colspan="16" width="363">
-<p>Doc\</p>
+<td colspan="6" width="114">
+Record設定檔
 </td>
-<td colspan="6" width="136">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="22">
-<p>&nbsp;</p>
-</td>
-<td width="22">
-<p>&nbsp;</p>
-</td>
-<td width="22">
-<p>&nbsp;</p>
-</td>
-<td width="22">
-<p>&nbsp;</p>
-</td>
-<td colspan="15" width="341">
-<p>LOG_NCU20201001A(WR1A).pdf</p>
-</td>
-<td colspan="6" width="136">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="22">
-<p>&nbsp;</p>
-</td>
-<td width="22">
-<p>&nbsp;</p>
-</td>
-<td width="22">
-<p>&nbsp;</p>
-</td>
-<td colspan="16" width="363">
-<p>Pic\</p>
-</td>
-<td colspan="6" width="136">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="22">
-<p>&nbsp;</p>
-</td>
-<td width="22">
-<p>&nbsp;</p>
-</td>
-<td width="22">
-<p>&nbsp;</p>
-</td>
-<td width="22">
-<p>&nbsp;</p>
-</td>
-<td colspan="15" width="341">
-<p>IMG_NCU20220401A(WR1A)_01.jpg</p>
-<p>IMG_NCU20220401A(WR1A)_02.jpg</p>
-<p>IMG_NCU20220401A(WR1A)_03.jpg</p>
-<p>IMG_NCU20220401A(WR1A)_04.jpg</p>
-<p>IMG_NCU20220401A(WR1A)_05.jpg</p>
-<p>IMG_NCU20220401A(WR1A)_06.jpg</p>
-<p>IMG_NCU20220401A(WR1A)_07.jpg</p>
-<p>IMG_NCU20220401A(WR1A)_08.jpg</p>
-<p>IMG_NCU20220401A(WR1A)_09.jpg</p>
-</td>
-<td colspan="6" width="136">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="22">
-<p>&nbsp;</p>
-</td>
-<td width="22">
-<p>&nbsp;</p>
-</td>
-<td width="22">
-<p>&nbsp;</p>
-</td>
-<td colspan="16" width="363">
-<p>EDI\</p>
-</td>
-<td colspan="6" width="136">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="22">
-<p>&nbsp;</p>
-</td>
-<td width="22">
-<p>&nbsp;</p>
-</td>
-<td width="22">
-<p>&nbsp;</p>
-</td>
-<td width="22">
-<p>&nbsp;</p>
-</td>
-<td colspan="15" width="341">
-<p>NCU20220401A(WR1A)_SS.edi</p>
-</td>
-<td colspan="6" width="136">
-<p>遠端站僅有單站估算資料</p>
-</td>
-</tr>
+</tr>  
 <tr>
 <td width="22">
 <p>&nbsp;</p>
