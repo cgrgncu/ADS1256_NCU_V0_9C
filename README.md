@@ -1,6 +1,8 @@
 # ADS1256_NCU_V0_9C
 
 ### 以後要考慮的擴充
++ 電源選擇(12V轉+-5V):
+  + TMR 12-1221WI : https://www.mouser.tw/ProductDetail/TRACO-Power/TMR-12-1221WI?qs=tlsG%2FOw5FFgXVv3J87bdpQ%3D%3D&srsltid=AfmBOoopCu0GxkJkutyZ2ENiPNa6E9aktc2Vxl0zDz0Uw-nW0Qoyj_nR
 + INA149，高共模電壓承受力，單位放大器。可以用來量電流、電壓。但是要用正負15供電??
 +  INA146，高共模電壓承受力，可調整放大器。
 ### 已知問題
